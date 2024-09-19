@@ -29,7 +29,7 @@ jobs:
         #registry: ${{ secrets.DOCKER_REGISTRY }}
         #username: ${{ secrets.DOCKER_USERNAME }}
         #password: ${{ secrets.DOCKER_PASSWORD }}
-        registry: loveme
+        registry: registry.cn-beijing.aliyuncs.com/loveme/kubernetes
         username: loveme0
         password: Recsys@4264
         logout: false
