@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker:agilestacks/fluentd-elasticsearch \
+        skopeo copy docker://agilestacks/fluentd-elasticsearch:v1.3.0 \
             docker://registry.cn-beijing.aliyuncs.com/loveme/agilestacks/fluentd-elasticsearch
