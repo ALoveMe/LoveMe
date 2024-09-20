@@ -30,6 +30,13 @@ jobs:
         username: loveme0
         password: Recsys@4264
         logout: false
+       
+    - name: Login to Aliyun Container Registry
+      uses: docker/login-action@v2.2.0
+      with:
+        registry: registry.cn-hangzhou.aliyuncs.com
+        username: loveme0
+        password: Recsys@4264
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
