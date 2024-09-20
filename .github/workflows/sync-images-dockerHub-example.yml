@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://agilestacks/fluentd-elasticsearch:v1.3.0 \
-            docker://registry.cn-beijing.aliyuncs.com/loveme/agilestacks_fluentd-elasticsearch:v1.3.0
+        skopeo copy docker://prom/prometheus:v2.2.1 \
+            docker://registry.cn-beijing.aliyuncs.com/loveme/prom_prometheus:v2.2.1
