@@ -35,4 +35,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy docker://agilestacks/fluentd-elasticsearch:v1.3.0 \
-            docker://registry.cn-beijing.aliyuncs.com/loveme/agilestacks/fluentd-elasticsearch:v1.3.0
+            docker://${{ secrets.DOCKER_REGISTRY }}/loveme/agilestacks/fluentd-elasticsearch:v1.3.0
