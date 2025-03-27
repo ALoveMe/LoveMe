@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://nacos/nacos-server:2.2.2 \
-            docker://${{ secrets.DOCKER_REGISTRY }}/loveme/nacos_nacos-server:2.2.2
+        skopeo copy docker://nacos/nacos-server:v2.2.2 \
+            docker://${{ secrets.DOCKER_REGISTRY }}/loveme/nacos_nacos-server:v2.2.2
