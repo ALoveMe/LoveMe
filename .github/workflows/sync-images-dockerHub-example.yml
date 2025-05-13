@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://apache_superset \
+        skopeo copy docker://apache_superset:latest \
             docker://${{ secrets.DOCKER_REGISTRY }}/loveme/apache_superset:latest
