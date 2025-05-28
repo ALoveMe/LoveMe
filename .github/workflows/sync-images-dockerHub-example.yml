@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://logstash:9.0.1 \
-            docker://${{ secrets.DOCKER_REGISTRY }}/loveme/logstash:9.0.1
+        skopeo copy docker://logstash:8.14.3 \
+            docker://${{ secrets.DOCKER_REGISTRY }}/loveme/logstash:8.14.3
